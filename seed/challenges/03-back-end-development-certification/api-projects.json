@@ -11,13 +11,13 @@
         [
           "//i.imgur.com/4IZjWZ3.gif",
           "A gif showing how to create a c9.io account.",
-          "这里我们推荐一个基于浏览器的在线开发环境 c9.io 来完成接下来的极限挑战。使用在线开发环境，你就不必在自己电脑上安装配置 Node.js 和 MongoDB 了，这样可以为你节省大把的时间用于编码。<br>打开 c9.io 主页后，点击右上角的 Github 图标，通过关联你的 Github 帐号来创建一个 c9.io 帐号。最后一步需要填写你的邮箱地址。（整个过程可以参考上边的演示录像）。",
+          "为了方便你完成接下来的挑战项目，这里推荐一个基于浏览器的在线开发环境 c9.io 。使用在线开发环境，你就不必在自己电脑上安装 Node.js 和 MongoDB 了，这样可以为你节省大把的时间来做练习。<br>打开 c9.io 主页后，点击右上角的 Github 图标，通过关联你的 Github 帐号来创建一个 c9.io 帐号。注意，最后一步需要填写你的邮箱地址。（整个过程可以参考上边的演示录像）。",
           "http://c9.io"
         ],
         [
           "//i.imgur.com/F7i5Hhi.gif",
           "A gif showing how to fill out the new workspace form",
-          "你没有必要从零开始完成接下来的挑战，我们推荐你使用一个集成了 MongoDB，Express 和 Node.js 的轻量级 JavaScript 全栈框架 Clementine.js 。Clementine.js 提供了完整的教程帮助你一步一步构建自己的应用开发环境，这里我们只需要克隆它的源码到 c9.io 的开发环境就好了。登录 c9.io 后，你需要创建一个新的 Workspace，模板选择 blank 即可，克隆地址填： <code>https://github.com/johnstonbl01/clementinejs-fcc.git</code> ， 完成开发环境创建。（整个过程可以参考上边的演示录像）。",
+          "你没有必要自己造轮子去完成接下来的挑战，这里推荐使用集成了 MongoDB，Express 和 Node.js 的轻量级 JavaScript 全栈框架 Clementine.js 。如果有兴趣，请参考 Clementine.js 的完整教程一步一步构建自己的应用开发环境，这里我们只需要克隆它的源码到 c9.io 的开发环境就好了。<br>登录 c9.io 后，你需要创建一个新的 Workspace，模板选择 blank 即可，克隆地址填： <code>https://github.com/johnstonbl01/clementinejs-fcc.git</code> ， 最后点击屏幕下方的 \"Create workspace\" 按钮，完成创建开发环境。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
@@ -29,7 +29,7 @@
         [
           "//i.imgur.com/qrE8xaK.gif",
           "A gif showing you how to create a new file.",
-          "在左侧导航栏上点击鼠标右键，新建一个文件 <code>.env</code>。（整个过程可以参考上边的演示录像）。",
+          "然后，在左侧导航栏的空白处点击鼠标右键，新建一个文件 <code>.env</code>。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
@@ -41,19 +41,19 @@
         [
           "//i.imgur.com/f3DE7zB.gif",
           "A gif showing you how to open c9.io's preview window.",
-          "点击标题栏上菜单 windows ， 在下拉菜单中选择 share， 之后在弹出的窗口中点击 Application 右边的链接， 在弹出选项中选择 open 。此时会打开一个新的页面，注意这个页面就是你在 c9.io 中新建的 App 的主页，拷贝这个 App 的主页地址，下一步会用到。（整个过程可以参考上边的演示录像）。",
+          "点击标题栏上菜单 windows ， 在下拉菜单中选择 share， 之后在弹出的窗口中点击 Application 右边的链接， 在弹出选项中选择 open 。此时会打开一个新的页面，注意这个页面就是你在 c9.io 中新建的 App 的主页，复制这个 App 的主页地址，下一步骤会用到。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
           "//i.imgur.com/Ip0qUdQ.gif",
           "A gif showing you how to create a GitHub app using c9.io's preview URL.",
-          "登录 Github ，进入你的 Profile 页面，在左侧列表中选择鉴权应用（OAuth applications），之后在右边选择开发者应用（Developer application）来创建一个鉴权App。应用名称（Application name）可以自己取， Homepage URL 填入上一步创建的 App 的主页地址。 Authorization callback URL 也填入相同的地址，并在后边加上相对路径：<code>auth/github/callback</code>。之后点击最下边的注册应用（Register Application）。（整个过程可以参考上边的演示录像）。",
+          "登录 Github ，进入你的 Profile 页面，在左侧列表中选择 OAuth applications ，之后在右边选择 Developer application 来创建一个鉴权 App 。 Application name 可以自己取， Homepage URL 填入上一步创建的 App 的主页地址。 Authorization callback URL 也填入相同的地址，并在后边加上相对路径：<code>auth/github/callback</code>。最后点击最下边的注册应用（Register Application）。（整个过程可以参考上边的演示录像）。",
           "https://github.com/settings/applications/new"
         ],
         [
           "//i.imgur.com/qCUVRFb.gif",
           "A gif showing you how to transfer GitHub's key and secret over to your .env file, as well as your c9.io URL.",
-          "在 Github 上的鉴权 App 已经创建完成，此时 Github 会显示 Client ID 和 Client Secret 。把 Client ID 和 Client Secret 分别赋给 .env 文件中的 GITHUB_KEY 和 GITHUB_SECRET。并把上边提到的 APP 地址赋给 APP_URL 。（整个过程可以参考上边的演示录像）。",
+          "在 Github 上的鉴权 App 已经创建完成，此时会显示 Client ID 和 Client Secret 。把 Client ID 和 Client Secret 分别赋给 .env 文件中的 GITHUB_KEY 和 GITHUB_SECRET。并把上文提到的 APP 地址赋给 APP_URL 。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
@@ -89,7 +89,7 @@
         [
           "//i.imgur.com/Qn0K65B.gif",
           "A gif showing you how to add add-ons to Heroku.",
-          "现在，你已经掌握如何在 c9.io 上开发部署 App 。后续我们将会进一步介绍在 Heroku 上部署 Clementine 的步骤（后续几个挑战都需要把完成的 App 部署到 Heroku 上，所以，请自己根据 Heroku 的文档练习一下如何部署 App 到 Heroku ）。",
+          "现在，你已经掌握如何在 c9.io 上开发部署 App 。后续我们将会进一步介绍在 Heroku 上部署 Clementine 的步骤（后续几个挑战都需要把完成的 App 部署到 Heroku 上，所以，请根据 Heroku 的文档自己练习一下如何部署 App 到 Heroku ）。",
           ""
         ]
       ],
@@ -103,14 +103,14 @@
       "id": "bd7158d8c443edefaeb5bdef",
       "title": "Timestamp Microservice",
       "description": [
-        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='https://timestamp-ms.herokuapp.com/' target='_blank'>https://timestamp-ms.herokuapp.com/</a> and deploy it to Heroku.",
-        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>.",
-        "Here are the specific user stories you should implement for this project:",
-        "<strong>User Story:</strong> I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).",
-        "<strong>User Story:</strong> If it does, it returns both the Unix timestamp and the natural language form of that date.",
-        "<strong>User Story:</strong> If it does not contain a date or Unix timestamp, it returns null for those properties.",
-        "Once you've finished implementing these user stories, click the \"I've completed this challenge\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标：</strong> 参考这个例子： <a href='https://timestamp-ms.herokuapp.com/' target='_blank'>https://timestamp-ms.herokuapp.com/</a> ，完成一个全栈式 JavaScript 应用，并把它部署在 Heroku 上。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "这个项目中需要完成的需求：",
+        "<strong>用户故事：</strong> 把一个字符串作为参数，判断该字符串是不是一个 Unix 时间，或者一个公历日期（例如：January 1, 2016）。",
+        "<strong>用户故事：</strong> 如果是，那么它同时返回 Unix 时间戳和公历日期。",
+        "<strong>用户故事：</strong> 如果不是，那么它返回 null 。",
+        "当你完成所有用户需求后，点击按钮 \"I've completed this challenge\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324691"
@@ -125,12 +125,12 @@
       "id": "bd7158d8c443edefaeb5bdff",
       "title": "Request Header Parser Microservice",
       "description": [
-        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='https://cryptic-ridge-9197.herokuapp.com/api/whoami/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/whoami/</a> and deploy it to Heroku.",
-        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>.",
-        "Here's the specific user story you should implement for this project:",
-        "<strong>User Story:</strong> I can get the IP address, language and operating system for my browser.",
-        "Once you've finished implementing these user stories, click the \"I've completed this challenge\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标：</strong> 参考这个例子：<a href='https://cryptic-ridge-9197.herokuapp.com/api/whoami/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/whoami/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "这个项目中需要完成的需求：",
+        "<strong>用户故事：</strong> 用户在浏览器输入该地址后，返回用户的 IP 地址，语言，操作系统等信息。",
+        "当你完成所有用户需求后，点击按钮 \"I've completed this challenge\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324460"
@@ -145,14 +145,14 @@
       "id": "bd7158d8c443edefaeb5bd0e",
       "title": "URL Shortener Microservice",
       "description": [
-        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='https://shurli.herokuapp.com/' target='_blank'>https://shurli.herokuapp.com/</a> and deploy it to Heroku.",
-        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>.",
-        "Here are the specific user stories you should implement for this project:",
-        "<strong>User Story:</strong>  I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.",
-        "<strong>User Story:</strong> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.",
-        "<strong>User Story:</strong> When I visit that shortened URL, it will redirect me to my original link.",
-        "Once you've finished implementing these user stories, click the \"I've completed this challenge\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标：</strong> 参考这个例子：<a href='https://shurli.herokuapp.com/' target='_blank'>https://shurli.herokuapp.com/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "这个项目中需要完成的需求：",
+        "<strong>用户故事：</strong> 用户在浏览器输入该地址时，把一个合法的 URL 作为参数，返回一个 JSON 格式的段地址。",
+        "<strong>用户故事：</strong> 如果用户输入的是一个无效的 URL 地址（不符合 http://www.example.com 格式）作为参数，则返回错误。",
+        "<strong>用户故事：</strong> 如果用户输入前边生成的段地址，则会重定向到相应的合法地址。",
+        "当你完成所有用户需求后，点击按钮 \"I've completed this challenge\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324692"
@@ -167,14 +167,14 @@
       "id": "bd7158d8c443edefaeb5bdee",
       "title": "Image Search Abstraction Layer",
       "description": [
-        "<strong>Objective:</strong> Build a full stack JavaScript app that allows you to search for images like this: <a href='https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10</a> and browse recent search queries like this: <a href='https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/</a>. Then deploy it to Heroku.",
-        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>.",
-        "Here are the specific user stories you should implement for this project:",
-        "<strong>User Story:</strong> I can get the image URLs, alt text and page urls for a set of images relating to a given search string.",
-        "<strong>User Story:</strong> I can paginate through the responses by adding a ?offset=2 parameter to the URL.",
-        "<strong>User Story:</strong> I can get a list of the most recently submitted search strings.",
-        "Once you've finished implementing these user stories, click the \"I've completed this challenge\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标：</strong> 参考这个图片查询的例子： <a href='https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10</a>， 以及这个显示最近几次查询情况的例子：<a href='https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "这个项目中需要完成的需求：",
+        "<strong>用户故事：</strong> 根据指定的字符串描述，获取一组符合描述的图片地址和文字描述以及页面地址。",
+        "<strong>用户故事：</strong> 可以在地址中增加一个参数 ?offset=2 来对返回结果进行分页。",
+        "<strong>用户故事：</strong> 可以获取一个列表，显示最近几次搜索的搜索语句和返回页面地址。",
+        "当你完成所有用户需求后，点击按钮 \"I've completed this challenge\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324461"
@@ -189,14 +189,14 @@
       "id": "bd7158d8c443edefaeb5bd0f",
       "title": "File Metadata Microservice",
       "description": [
-        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='https://cryptic-ridge-9197.herokuapp.com/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/</a> and deploy it to Heroku.",
-        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>.",
-        "Here are the specific user stories you should implement for this project:",
-        "<strong>User Story:</strong> I can submit a FormData object that includes a file upload.",
-        "<strong>User Story:</strong> When I submit something, I will receive the file size in bytes within the JSON response",
-        "<strong>Hint:</strong> You may want to use this package: <a href='https://www.npmjs.com/package/multer' target='_blank'>https://www.npmjs.com/package/multer</a>",
-        "Once you've finished implementing these user stories, click the \"I've completed this challenge\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标：</strong> 参考这个例子：<a href='https://cryptic-ridge-9197.herokuapp.com/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "这个项目中需要完成的需求：",
+        "<strong>用户故事：</strong> 我可以通过提交一个 FormData 对象来上传文件。",
+        "<strong>用户故事：</strong> 当我上传一个文件后，会收到一个 JSON 格式的响应，显示文件的大小。",
+        "<strong>提示：</strong> 你可能会用到这个模块： <a href='https://www.npmjs.com/package/multer' target='_blank'>https://www.npmjs.com/package/multer</a> 。",
+        "当你完成所有用户需求后，点击按钮 \"I've completed this challenge\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324457"
